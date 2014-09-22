@@ -1,12 +1,3 @@
-/**
- * smooth-scroll v5.1.0
- * Animate scrolling to anchor links, by Chris Ferdinandi.
- * http://github.com/cferdinandi/smooth-scroll
- * 
- * Free to use under the MIT License.
- * http://gomakethings.com/mit/
- */
-
 /*
  * Polyfill Function.prototype.bind support for otherwise ECMA Script 5 compliant browsers
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind#Compatibility

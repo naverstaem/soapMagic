@@ -20,9 +20,9 @@
             <div class="logo"><img src="img/logo.png" alt="logo"/></div>
         </a>
         <ul class="js-nav">
-            <li><a href="#">О магазине</a></li>
-            <li><a href="#">О доставке</a></li>
-            <li><a href="#">Преимущества</a></li>
+            <li><a data-scroll href="#about">О магазине</a></li>
+            <li><a data-scroll href="#how">О доставке</a></li>
+            <li><a data-scroll href="#specs">Преимущества</a></li>
         </ul>
         <div class="menu_contacts">
 
@@ -35,7 +35,7 @@
 </header>
 <!--div with class page for smooth scrolling and hightliting-->
 <div class="page">
-<div class="intro">
+<div class="intro" id="about">
     <div class="intro__top">
         <div class="intro__top_in">
             <h1 class="title">Сенсорная мыльница Soap Magic</h1>
@@ -200,7 +200,7 @@
 </div>
 
 
-<div class="specs">
+<div class="specs" id="specs">
     <h2 class="title">Soap magic<br/><span>Это именно то, что необходимо в кухне и ванной комнате</span></h2>
 
     <div class="specs_in">
@@ -254,7 +254,7 @@
         </div>
     </div>
 </div>
-<div class="how">
+<div class="how" id="how">
     <h2 class="title">как мы работаем</h2>
 
     <div class="how_in">
@@ -515,7 +515,7 @@
             <label class="chkbox">
                 <input type="checkbox" class="yes" name="yes" id="yes">
                 <span></span>
-                Я ознакомлен (а) с условиями отправки сообщений
+                Я ознакомлен (а) с <a class="conditions" href="#">условиями</a> отправки сообщений
             </label>
             <button class="button" id="send">отправить</button>
         </div>
@@ -524,7 +524,7 @@
     </form>
 </div>
 <div class="callback" id="callback" style="display: none;">
-    <h2 class="title title--dash title--popup">обратный звонок</h2>
+    <h2 class="title title--popup">обратный звонок</h2>
     <h3>Введите контактные данные и наш менеджер свяжется
         с вами в ближайшее время</h3>
     <form action="#" method="post" id="form7">
@@ -537,11 +537,11 @@
 </div>
 <div class="thanks" id="thanks" style="display: none;">
     <img src="img/hearth.png" alt="thanks"/>
-    <h2 class="title title--dash title--popup">спасибо!</h2>
+    <h2 class="title title--popup">спасибо!</h2>
     <h3>Мы получили Вашу заявку и совсем скоро
         Вам перезвоним!</h3>
 </div>
-<a class="thanks-link fancybox" href="#thanks"></a>
+<a class="thanks-link fancybox_wcb" href="#thanks"></a>
 
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
