@@ -119,7 +119,7 @@
           position: absolute
           content: ""
           height: 0
-          border-bottom: solid 1px #ffffff
+          border-bottom: solid 1px rgba(#ffffff, .5)
           top: 50%
           width: 100%
           left: 0
@@ -128,7 +128,7 @@
           position: absolute
           content: ""
           height: 0
-          border-bottom: solid 1px #cbcbcb
+          border-bottom: solid 1px rgba(#cbcbcb, .5)
           top: 49%
           width: 100%
           left: 0
@@ -136,34 +136,36 @@
 
 
 .form
-  margin-top: 20px
   +clr
+  margin-top: 10px
   input
-    border: 3px solid rgba(8,45,20,.28)
+    border: 3px solid rgba(160,160,160,.28)
     +border-radius(6px)
     +background-clip(padding-box)
-    background: #fff
-    width: 269px
+    background: #f5f5f5
+    width: 345px
     height: 45px
     padding-left: 15px
     box-sizing: border-box
-    margin-right: 15px
+    margin-right: 20px
     font-size: 16px
     line-height: 1em
-    &:focus
-      +box-shadow(0 1px 5px rgba(0,0,0,.08), 0 0 18px rgba(255,255,190,.44))
+    +box-shadow(0 1px 5px rgba(0,0,0,.08))
+
 button
-  +border-radius(2px)
+  +border-radius(23px)
   +background-clip(padding-box)
-  background: #efa300
-  +box-shadow(0 4px 0 #b07800)
   height: 46px
   text-transform: uppercase
-  font-size: 20.2px
+  font-size: 22.2px
   color: #ffffff
-  padding: 0 44px
+  +sl
+  padding: 0 47px
+  background-color: #ffb71e
+  +box-shadow(0 4px 0 #da980a)
+  +single-text-shadow()
   &:hover
-    +box-shadow(0 0 0 #ffffff)
+    background-color: lighten(#ffb71e, 10%)
 
 
 // common blocks      
