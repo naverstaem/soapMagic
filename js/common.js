@@ -50,7 +50,7 @@ head.ready(function() {
             $(".fancybox-skin").css("boxShadow","none");
         }
     });
-    $(".moreReviews").click(function(){
+    $("#moreReviews").click(function(){
         $("#otherItems").slideToggle("normal"); return false;
     });
 //    $("#form4 input.yes").change(function () {

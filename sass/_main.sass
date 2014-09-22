@@ -372,9 +372,11 @@ header
 
 .how
   padding-bottom: 60px
+  +clr
   .how_in
     @extend %in
     width: 970px
+    +clr
   .how__item
     margin-top: 50px
     text-align: center
@@ -415,6 +417,8 @@ header
 .review
   +clr
   clear: both
+  padding-bottom: 80px
+  +box-shadow(inset 0 6px 32px -15px black)
   .review_in
     @extend %in
     width: 890px
@@ -441,20 +445,115 @@ header
       font-size: 18px
       color: #414040
       +osl
-      padding: 20px 25px
+      padding: 20px 30px
 
     h3
       +osr
   &__buttons
+    +clr
     @extend %in
     width: 460px
+    clear: both
+    margin-top: 70px
+
+    .more-reviews
+      text-align: center
+      position: relative
+      width: 202px
+      height: 94px
+      +border-radius(2px)
+      +background-clip(padding-box)
+      +box-shadow(0 3px 0 rgba(184,184,184,.75))
+      +background-image(linear-gradient(to bottom, #fbfbfb 0%, #e9e9e9 100%))
+      float: left
+      +box
+      padding-top: 56px
+      text-decoration: none
+      color: #333333
+      font-size: 19px
+      +ossb
+      &:hover
+        +box-shadow(none)
 
 
+      i
+        position: absolute
+        +s(more-reviews_ico)
+        left: 50%
+        +transform(translate(-50%))
+        top: 20%
+    .add-review
+      float: right
+      i
+        +s(add-review_ico)
 
+.also
+  +box-shadow(0 -6px 32px -15px black)
+  .also_in
+    @extend %in
+  &__item
+    text-align: center
+    vertical-align: top
+    display: inline-block
+    margin-right: 50px
+    width: 280px
+    height: 533px
+    +border-radius(3px)
+    +background-clip(padding-box)
+    background-color: #fff
+    +box-shadow(0 3px 0 rgba(0,0,0,.17))
+    +background-image(linear-gradient(to bottom, #fff 0%, #fff 30.09%, #f5f5f5 100%))
+    +clr
+    padding-top: 60px
 
+    &:last-child
+      margin-right: 0
+  &__img
+  &__caption
+    +osl
+    font-size: 23px
+    color: #181818
+    margin-top: 10px
+  &__color
+    font-size: 17px
+    color: #333333
+    +osl
+  &__price
+    font-size: 21px
+    color: #181818
+    margin-top: 10px
+    +ossb
+  &__form
+    margin-top: 20px
 
+    input
+      width: 225px
+      border: 1px solid rgba(204,204,204,.59)
+      +border-radius(4px)
+      background: #ffffff
+      margin: 10px 0 0
+    .button
+      margin-top: 30px
+      padding: 0 56px
 
+.bottom
+  margin-top: 55px
 
+footer
+  @extend header
+  background: none
+  position: static
+  color: #221f20
+  .ul--bottom
+    color: #221f20
+    li
+      border-right: 1px solid #b2cedb
+  nav
+    padding-top: 50px
+    .menu_phone--bottom
+      color: #221f20
+    .menu_callMe--bottom
+      color: #221f20
 
 .thanks
   border: 6px solid #5f7d0f
