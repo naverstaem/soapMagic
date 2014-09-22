@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Soap Magic</title>
+    <meta name="viewport" content="initial-scale=1"/>
+    <!-- <meta name="viewport" content="width=1200"> -->
+    <link rel="stylesheet" media="screen" href="css/screen.css">
+    <link rel="stylesheet" href="css/fonts/fonts.css"/>
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+    <!--[if IE]>
+    <script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+    <header>
+        <nav>
+            <div class="logo"><img src="img/logo.png" alt="logo"/></div>
+            <ul class="js-nav">
+                <li><a href="#">О магазине</a></li>
+                <li><a href="#">О доставке</a></li>
+                <li><a href="#">Преимущества</a></li>
+            </ul>
+            <div class="menu_contacts">
+
+                <div class="menu_phone">8 800 555 44 33</div>
+                <a class="menu_callMe fancybox" href="#callback">Перезвоните мне</a>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="intro">
+        <div class="intro__top">
+            <div class="intro__top_in">
+                <h1 class="title">Сенсорная мыльница Soap Magic</h1>
+
+                <h2>Вы внимательно относитесь к чистоте в вашем доме
+                    и вопросам личной гигиены?
+                    Оградить себя от различных инфекций вам поможет
+                    новая уникальная мыльница Soap magic!</h2>
+            </div>
+        </div>
+        <div class="intro__about">
+            <div class="intro_in">
+
+                <ol>
+                    <li class="about__item">Заполните емкость мыльницы средством
+                        для мытья посуды, мылом для рук
+                        или дезинфицирующем средством.
+                    </li>
+                    <li class="about__item second">Поднесите руки или губку
+                        или другой моющий предмет к носику гаджета.
+                    </li>
+                    <li class="about__item third">Мыльница автоматически выберет
+                        необходимую дозу средства и сигналом сообщит
+                        Вам о завершении работы.
+                    </li>
+                </ol>
+                <div class="intro__img"><img src="img/sm_img.png" alt="magic"/></div>
+            </div>
+        </div>
+        <div class="form-block">
+            <div class="form-block_in">
+                <div class="form-block__top">
+                    <div class="form-block__text">
+                        <h2>Закажите сейчас!</h2>
+
+                        <p>по супер цене <span>2 999 <span>Р</span>!</span></p>
+                    </div>
+                    <div class="counter">
+                        <div class="counter">
+                            <p class="counterTitle">до конца акции осталось:</p>
+
+                            <ul class="count_line">
+
+                                <li>
+                                    <span class="d"></span>
+
+                                    <p>дней</p>
+                                </li>
+
+                                <li>
+                                    <span class="h"></span>
+
+                                    <p>часов</p>
+                                </li>
+
+                                <li>
+                                    <span class="m"></span>
+
+                                    <p>минут</p>
+                                </li>
+
+                                <br class="cb">
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="form" id="form1">
+                    <form action="#" method="post">
+                        <input type="text" name="name" class="name required" placeholder="Введите имя">
+                        <input type="text" name="phone" class="phone required" placeholder="Введите телефон">
+                        <button class="button">заказать</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+<!--div with class page for smooth scrolling and hightliting-->
+<div class="page">
+
+
+    <footer>
+
+
+    </footer>
+    <div class="menu_bottom">
+
+
+    </div>
+</div>
+</div>
+<div id="thanks" class="thanks" style="display: none;">
+    <img class="smile" src="img/smile.png" alt="smile"/>
+
+    <h2 class="title">Спасибо!</h2>
+
+    <h3>Мы получили Вашу заявку и совсем скоро
+        Вам перезвоним!</h3>
+</div>
+<div id="callback" class="callback" style="display: none;">
+    <h2 class="title">Обратный звонок</h2>
+
+    <h3>Введите контактные данные и наш менеджер свяжется
+        с вами в ближайшее время</h3>
+
+    <form action="#" method="post" id="form3">
+        <input type="text" name="name" class="name required" placeholder="Введите имя">
+        <input type="text" name="phone" class="phone required" placeholder="Введите телефон">
+        <button class="button">отправить</button>
+
+    </form>
+</div>
+<div id="form_addReview" class="form_addReview" style="display: none;">
+    <h2 class="title">Оставить отзыв</h2>
+
+    <h3>Вы можете оставить озыв о нашем продукте и
+        мы разместим его на сайте</h3>
+
+    <form action="#" method="post" id="form4">
+        <div class="form_inner">
+            <input type="text" name="name" class="name required" placeholder="Введите имя">
+            <input type="text" name="phone" class="phone required" placeholder="Введите телефон">
+            <textarea class="required text" name="msg" placeholder="Текст озыва"></textarea>
+            <label class="chkbox">
+                <input type="checkbox" class="yes" name="yes" id="yes">
+                <span></span>
+                Я ознакомлен (а) с условиями отправки сообщений
+            </label>
+            <button class="button" id="send">отправить</button>
+        </div>
+
+
+    </form>
+</div>
+<a class="thanx-link fancybox" href="#thanks"></a>
+
+<!-- END out-->
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+
+</body>
+</html>

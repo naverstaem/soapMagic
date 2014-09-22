@@ -1,0 +1,278 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book", Arial, sans-serif 
+// insert pics into css
+// div
+// 	+pic("blabla.png")
+// span
+// 	+png(blabla)
+// p
+// 	+jpg(bla)
+
+
+//body
+//  font-family: Arial, sans-serif
+//  font-size: 12px
+//  line-height: 1.4
+=osl
+  font-family: "open_sanslight"
+  font-weight: normal
+  font-style: normal
+
+=osr
+  font-family: "open_sansregular"
+  font-weight: normal
+  font-style: normal
+=ossb
+  font-family: "open_sanssemibold"
+  font-weight: normal
+  font-style: normal
+=sl
+  font-family: "sunlineregular"
+  font-weight: normal
+  font-style: normal
+.counter
+  width: 285px
+  margin: auto auto 0
+  display: block
+  text-align: center
+  p
+    margin-bottom: 5px
+    margin-top: 3px
+    position: static
+    color: #ffffff
+    +osl
+    font-size: 14px
+    &.counterTitle
+      font-size: 17px
+      font-family: inherit
+
+
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    display: inline-block
+
+    li
+      float: left
+      margin: 0 5px
+      text-align: center
+      position: relative
+
+      span
+        position: relative
+        +text-shadow(0 1px 0 #fff)
+        display: block
+        font-size: 27px
+        width: 52px
+        height: 52px
+        padding-right: 1px
+        font-family: 'sunlineregular'
+        color: #333333
+        +background-clip(padding-box)
+        box-sizing: border-box
+        padding-top: 7px
+        +border-radius(2px)
+        +background-image(linear-gradient(to bottom,#b8b8b8 0%, #e9e9e9 50%, #fff 100%))
+        +box-shadow(0 2px 0 rgba(0,0,0,.08))
+        &:before
+          position: absolute
+          content: ""
+          height: 0
+          border-bottom: solid 1px #ffffff
+          top: 50%
+          width: 100%
+          left: 0
+          right: 0
+        &:after
+          position: absolute
+          content: ""
+          height: 0
+          border-bottom: solid 1px #cbcbcb
+          top: 49%
+          width: 100%
+          left: 0
+          right: 0
+
+
+.form
+  margin-top: 20px
+  +clr
+  input
+    border: 3px solid rgba(8,45,20,.28)
+    +border-radius(6px)
+    +background-clip(padding-box)
+    background: #fff
+    width: 269px
+    height: 45px
+    padding-left: 15px
+    box-sizing: border-box
+    margin-right: 15px
+    font-size: 16px
+    line-height: 1em
+    &:focus
+      +box-shadow(0 1px 5px rgba(0,0,0,.08), 0 0 18px rgba(255,255,190,.44))
+button
+  +border-radius(2px)
+  +background-clip(padding-box)
+  background: #efa300
+  +box-shadow(0 4px 0 #b07800)
+  height: 46px
+  text-transform: uppercase
+  font-size: 20.2px
+  color: #ffffff
+  padding: 0 44px
+  &:hover
+    +box-shadow(0 0 0 #ffffff)
+
+
+// common blocks      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
