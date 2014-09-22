@@ -56,9 +56,9 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 16px; color: #9
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 16px; color: #999999; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
 input::placeholder, textarea::placeholder { font-size: 16px; color: #999999; font-family: "open_sanslight"; font-weight: normal; font-style: normal; }
 
-header nav, .intro .intro_in, .intro__top .intro__top_in, .form-block .form-block_in, .about .about_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
+header nav, .intro .intro_in, .intro__top .intro__top_in, .form-block .form-block_in, .about .about_in, .specs .specs_in { max-width: 1200px; width: 960px; margin-left: auto; margin-right: auto; }
 
-.myFancyClose { background: url('../img/icons-s850e262025.png') 0 0 no-repeat; width: 13px; height: 13px; position: absolute; top: 15px; right: 50px; }
+.myFancyClose { background: url('../img/icons-s64aa2f855f.png') 0 0 no-repeat; width: 13px; height: 13px; position: absolute; top: 15px; right: 50px; }
 
 .btn { display: inline-block; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; text-decoration: none; padding: 10px 20px; -moz-transition: background, 0.5s; -o-transition: background, 0.5s; -webkit-transition: background, 0.5s; transition: background, 0.5s; }
 .btn:hover { background: white; }
@@ -96,7 +96,7 @@ header nav .menu_callMe:hover { border-bottom: none; }
 .intro__about .about__item.second { width: 185px; }
 .intro__about .about__item.third { width: 200px; }
 .intro__about .about__item:last-child { margin-right: 0; }
-.intro__about .about__item:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #ffffff; font-size: 39px; font-family: sunlineregular; content: counter(myCounter); counter-increment: myCounter; text-align: center; padding-top: 9px; position: absolute; top: -82px; left: -22px; background: url('../img/icons-s850e262025.png') 0 -23px no-repeat; width: 70px; height: 70px; }
+.intro__about .about__item:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #ffffff; font-size: 39px; font-family: sunlineregular; content: counter(myCounter); counter-increment: myCounter; text-align: center; padding-top: 9px; position: absolute; top: -82px; left: -22px; background: url('../img/icons-s64aa2f855f.png') 0 -23px no-repeat; width: 70px; height: 70px; }
 .intro__img { float: right; z-index: 0; margin-right: -110px; margin-top: -367px; }
 .intro__img img { display: block; }
 
@@ -126,6 +126,28 @@ header nav .menu_callMe:hover { border-bottom: none; }
 .about__img { display: inline-block; width: 120px; height: 120px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #e3f3fd; -moz-box-shadow: 0 3px 0 rgba(147, 202, 232, 0.45); -webkit-box-shadow: 0 3px 0 rgba(147, 202, 232, 0.45); box-shadow: 0 3px 0 rgba(147, 202, 232, 0.45); }
 .about__img .vertical-centered { height: 100%; vertical-align: middle; display: inline-block; }
 .about__img img { vertical-align: middle; }
+
+.specs { background: #fff4cf; *zoom: 1; }
+.specs:after { content: " "; display: table; clear: both; }
+.specs .specs_in { *zoom: 1; margin-top: 60px; }
+.specs .specs_in:after { content: " "; display: table; clear: both; }
+.specs h2 span { font-family: "open_sanslight"; font-weight: normal; font-style: normal; font-size: 30px; text-transform: none; }
+.specs .specs__text { color: #333333; float: left; width: 600px; }
+.specs .specs__text .specs__intro { font-family: "open_sansregular"; font-weight: normal; font-style: normal; font-size: 20px; margin-bottom: 30px; }
+.specs .specs__text .specs__second-block { font-family: "open_sanslight"; font-weight: normal; font-style: normal; font-size: 16px; line-height: 1.5em; }
+.specs .specs__text .specs__third-block { margin-top: 37px; }
+.specs .specs__text .specs__third-block img { margin-top: -7px; display: block; float: left; width: 142px; height: 142px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; margin-right: 35px; }
+.specs .specs__text .specs__fourth-block { font-family: "open_sanssemibold"; font-weight: normal; font-style: normal; margin-top: 30px; }
+.specs .specs__right { float: right; width: 255px; }
+.specs .specs__right .right__img { display: block; margin-top: -20px; }
+.specs .specs__right .right__specs h3 { font-size: 19px; color: #1a1a1a; font-family: "open_sanssemibold"; font-weight: normal; font-style: normal; }
+.specs .specs__right .right__specs ul li { position: relative; padding-left: 40px; margin-top: 20px; }
+.specs .specs__right .right__specs ul li span { font-family: "open_sansregular"; font-weight: normal; font-style: normal; }
+.specs .specs__right .right__specs ul li:before { position: absolute; content: ""; top: 0; left: 0px; }
+.specs .specs__right .right__specs ul li.li--first:before { background: url('../img/icons-s64aa2f855f.png') 0 -103px no-repeat; width: 15px; height: 23px; }
+.specs .specs__right .right__specs ul li.li--second:before { background: url('../img/icons-s64aa2f855f.png') 0 -136px no-repeat; width: 15px; height: 24px; }
+.specs .specs__right .right__specs ul li.li--third:before { background: url('../img/icons-s64aa2f855f.png') 0 -170px no-repeat; width: 20px; height: 18px; }
+.specs .specs__right .right__specs ul li.li--fourth:before { background: url('../img/icons-s64aa2f855f.png') 0 -198px no-repeat; width: 21px; height: 24px; }
 
 .thanks { border: 6px solid #5f7d0f; -moz-border-radius: 55px 55px 55px/176px 176px 176px 176px; -webkit-border-radius: 55px; border-radius: 55px 55px 55px/176px 176px 176px 176px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background: #fff; -moz-box-shadow: 0 2px 36px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0 2px 36px rgba(0, 0, 0, 0.15); box-shadow: 0 2px 36px rgba(0, 0, 0, 0.15); width: 604px; height: 353px; }
 .thanks .smile { display: block; margin: 55px auto 0; }

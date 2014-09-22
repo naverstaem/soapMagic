@@ -296,6 +296,80 @@ header
       vertical-align: middle
 
 
+.specs
+  background: rgb(255,244,207)
+  +clr
+  .specs_in
+    @extend %in
+    +clr
+    margin-top: 60px
+  h2
+    span
+      +osl
+      font-size: 30px
+      text-transform: none
+  .specs__text
+    color: #333333
+    float: left
+    width: 600px
+    .specs__intro
+      +osr
+      font-size: 20px
+      margin-bottom: 30px
+    .specs__second-block
+      +osl
+      font-size: 16px
+      line-height: 1.5em
+    .specs__third-block
+      margin-top: 37px
+      img
+        margin-top: -7px
+        display: block
+        float: left
+        width: 142px
+        height: 142px
+        +border-radius(50%)
+        margin-right: 35px
+    .specs__fourth-block
+      +ossb
+      margin-top: 30px
+  .specs__right
+    float: right
+    width: 255px
+    .right__img
+      display: block
+      margin-top: -20px
+    .right__specs
+      h3
+        font-size: 19px
+        color: #1a1a1a
+        +ossb
+      ul
+        li
+          position: relative
+          padding-left: 40px
+          margin-top: 20px
+          span
+            +osr
+          &:before
+            position: absolute
+            content: ""
+            top: 0
+            left: 0px
+          &.li--first
+            &:before
+              +s(specs_ico1)
+          &.li--second
+            &:before
+              +s(specs_ico2)
+          &.li--third
+            &:before
+              +s(specs_ico3)
+          &.li--fourth
+            &:before
+              +s(specs_ico4)
+
+
 
 
 
