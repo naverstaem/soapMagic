@@ -39,7 +39,9 @@ head.ready(function() {
         padding: 0,
         helpers: {
             overlay: {
-                locked: false
+                locked: false,
+                css:{'background' : 'rgba(255, 255, 255, 0.9)'}
+
             }
         },
         tpl: {
