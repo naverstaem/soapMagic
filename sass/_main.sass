@@ -298,6 +298,7 @@ header
 
 .specs
   background: rgb(255,244,207)
+  padding-bottom: 100px
   +clr
   .specs_in
     @extend %in
@@ -369,6 +370,84 @@ header
             &:before
               +s(specs_ico4)
 
+.how
+  padding-bottom: 60px
+  .how_in
+    @extend %in
+    width: 970px
+  .how__item
+    margin-top: 50px
+    text-align: center
+    width: 252px
+    vertical-align: top
+    float: left
+    position: relative
+    margin-left: -14px
+
+    &:first-child
+      margin-left: 0
+      z-index: 3
+    &:nth-child(2)
+      z-index: 2
+    &:nth-child(3)
+      z-index: 1
+
+    &:last-child
+      border-right: 0
+
+
+    .how__img
+      img
+        display: block
+  p
+    font-size: 16px
+    padding: 10px 25px
+
+    margin-right: 14px
+    margin-top: 25px
+    +osl
+    color: #242424
+    border-right: solid 1px rgba(#eaeaea, .77)
+    &.last
+      border-right: 0
+
+
+.review
+  +clr
+  clear: both
+  .review_in
+    @extend %in
+    width: 890px
+    +clr
+  &__item
+    text-align: center
+    display: inline-block
+    vertical-align: top
+    position: relative
+    width: 440px
+    border-right: solid 1px rgba(#eaeaea, .77)
+    margin-top: 50px
+    +box
+    &:last-child
+      border-right: 0
+    .review__img
+      display: inline-block
+      width: 173px
+      height: 173px
+      img
+        display: block
+        +border-radius(50%)
+    p
+      font-size: 18px
+      color: #414040
+      +osl
+      padding: 20px 25px
+
+    h3
+      +osr
+  &__buttons
+    @extend %in
+    width: 460px
 
 
 
